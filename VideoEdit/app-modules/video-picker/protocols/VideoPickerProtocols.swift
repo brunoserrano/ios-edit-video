@@ -18,6 +18,7 @@ protocol ViewToPresenterProtocol: class {
 }
 
 protocol PresenterToViewProtocol: class {
+    var presenter: ViewToPresenterProtocol? { get set }
     func showVideos(videos: Array<Video>)
     func showFetchError(error: String)
 }

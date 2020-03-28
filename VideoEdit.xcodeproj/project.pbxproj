@@ -16,6 +16,7 @@
 		9A970A6D242C42FE00AE3E0D /* VideoEditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A970A6C242C42FE00AE3E0D /* VideoEditUITests.swift */; };
 		9A9D98FF242C509E00EB873E /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D98FE242C509E00EB873E /* Video.swift */; };
 		9A9D9902242C50E400EB873E /* VideoPickerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D9901242C50E400EB873E /* VideoPickerProtocols.swift */; };
+		9ADE9BD8242D8EC1002F92FF /* VideoPickerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE9BD7242D8EC1002F92FF /* VideoPickerRouter.swift */; };
 		9AE8FF87242C537500AE648D /* VideoPickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8FF86242C537500AE648D /* VideoPickerPresenter.swift */; };
 		9AE8FF89242C538300AE648D /* VideoPickerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8FF88242C538300AE648D /* VideoPickerInteractor.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		9A970A6E242C42FE00AE3E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A9D98FE242C509E00EB873E /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		9A9D9901242C50E400EB873E /* VideoPickerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPickerProtocols.swift; sourceTree = "<group>"; };
+		9ADE9BD7242D8EC1002F92FF /* VideoPickerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPickerRouter.swift; sourceTree = "<group>"; };
 		9AE8FF86242C537500AE648D /* VideoPickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPickerPresenter.swift; sourceTree = "<group>"; };
 		9AE8FF88242C538300AE648D /* VideoPickerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPickerInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +159,14 @@
 			path = protocols;
 			sourceTree = "<group>";
 		};
+		9ADE9BD6242D8EA9002F92FF /* routers */ = {
+			isa = PBXGroup;
+			children = (
+				9ADE9BD7242D8EC1002F92FF /* VideoPickerRouter.swift */,
+			);
+			path = routers;
+			sourceTree = "<group>";
+		};
 		9AE8FF84242C531000AE648D /* interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,10 +226,11 @@
 		9AFCF488242C4DE700627432 /* video-picker */ = {
 			isa = PBXGroup;
 			children = (
+				9A9D9900242C50BF00EB873E /* protocols */,
+				9ADE9BD6242D8EA9002F92FF /* routers */,
+				9A9D98FD242C507C00EB873E /* entity */,
 				9AE8FF85242C531A00AE648D /* presenter */,
 				9AE8FF84242C531000AE648D /* interactor */,
-				9A9D9900242C50BF00EB873E /* protocols */,
-				9A9D98FD242C507C00EB873E /* entity */,
 				9A6158B9242C4F9900E22CC1 /* view */,
 			);
 			path = "video-picker";
@@ -356,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADE9BD8242D8EC1002F92FF /* VideoPickerRouter.swift in Sources */,
 				9AE8FF87242C537500AE648D /* VideoPickerPresenter.swift in Sources */,
 				9A970A4F242C42F700AE3E0D /* VideoPickerViewController.swift in Sources */,
 				9AE8FF89242C538300AE648D /* VideoPickerInteractor.swift in Sources */,
