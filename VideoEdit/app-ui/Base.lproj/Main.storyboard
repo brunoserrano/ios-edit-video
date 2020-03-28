@@ -23,9 +23,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MjM-dF-nA4">
-                                <rect key="frame" x="0.0" y="115" width="414" height="781"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MjM-dF-nA4">
+                                <rect key="frame" x="0.0" y="115" width="414" height="761"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qJ6-nr-Phh">
                                     <size key="itemSize" width="50" height="50"/>
@@ -60,8 +59,12 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="MjM-dF-nA4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0Gq-HM-4QZ"/>
                             <constraint firstItem="hD1-aJ-hzx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ZO-In-D1r"/>
+                            <constraint firstItem="MjM-dF-nA4" firstAttribute="top" secondItem="hD1-aJ-hzx" secondAttribute="bottom" constant="8" id="Cug-hh-WEN"/>
                             <constraint firstItem="hD1-aJ-hzx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="NEO-n1-wSB"/>
+                            <constraint firstItem="MjM-dF-nA4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hxf-dA-Nju"/>
+                            <constraint firstAttribute="bottom" secondItem="MjM-dF-nA4" secondAttribute="bottom" constant="20" symbolic="YES" id="w8A-1C-hxw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

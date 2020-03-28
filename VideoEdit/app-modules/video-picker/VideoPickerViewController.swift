@@ -12,6 +12,9 @@ import Photos
 class VideoPickerViewController: UIViewController {
     var presenter: ViewToPresenterProtocol?
     
+    let itemsInRow: CGFloat = 3
+    let itemsSpace: CGFloat = 8
+    
     private var _videos: Array<Video> = []
     var videos: Array<Video> {
         get { return _videos }
@@ -91,7 +94,7 @@ extension VideoPickerViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = (collectionView.bounds.width / 3) - 16
+        let size = (collectionView.bounds.width / itemsInRow) - itemsSpace
         return CGSize(width: size, height: size)
     }
 }
