@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A3B358C243D719A00FB12C3 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B358B243D719900FB12C3 /* VideoView.swift */; };
 		9A970A4B242C42F700AE3E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A970A4A242C42F700AE3E0D /* AppDelegate.swift */; };
 		9A970A4F242C42F700AE3E0D /* VideoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A970A4E242C42F700AE3E0D /* VideoPickerViewController.swift */; };
 		9A970A52242C42F700AE3E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A970A50242C42F700AE3E0D /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		9ADE9BD8242D8EC1002F92FF /* VideoPickerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE9BD7242D8EC1002F92FF /* VideoPickerRouter.swift */; };
 		9AE8FF87242C537500AE648D /* VideoPickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8FF86242C537500AE648D /* VideoPickerPresenter.swift */; };
 		9AE8FF89242C538300AE648D /* VideoPickerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8FF88242C538300AE648D /* VideoPickerInteractor.swift */; };
+		9AEE05A6242F043000A8E3A7 /* VideoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE05A5242F043000A8E3A7 /* VideoPreviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A3B358B243D719900FB12C3 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		9A970A47242C42F700AE3E0D /* VideoEdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoEdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A970A4A242C42F700AE3E0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A970A4E242C42F700AE3E0D /* VideoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoPickerViewController.swift; path = ../VideoPickerViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 		9ADE9BD7242D8EC1002F92FF /* VideoPickerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPickerRouter.swift; sourceTree = "<group>"; };
 		9AE8FF86242C537500AE648D /* VideoPickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPickerPresenter.swift; sourceTree = "<group>"; };
 		9AE8FF88242C538300AE648D /* VideoPickerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPickerInteractor.swift; sourceTree = "<group>"; };
+		9AEE05A5242F043000A8E3A7 /* VideoPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				9A970A4E242C42F700AE3E0D /* VideoPickerViewController.swift */,
+				9AEE05A5242F043000A8E3A7 /* VideoPreviewViewController.swift */,
+				9A3B358B243D719900FB12C3 /* VideoView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -373,6 +379,8 @@
 				9AE8FF89242C538300AE648D /* VideoPickerInteractor.swift in Sources */,
 				9A9D98FF242C509E00EB873E /* Video.swift in Sources */,
 				9A970A4B242C42F700AE3E0D /* AppDelegate.swift in Sources */,
+				9A3B358C243D719A00FB12C3 /* VideoView.swift in Sources */,
+				9AEE05A6242F043000A8E3A7 /* VideoPreviewViewController.swift in Sources */,
 				9A9D9902242C50E400EB873E /* VideoPickerProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

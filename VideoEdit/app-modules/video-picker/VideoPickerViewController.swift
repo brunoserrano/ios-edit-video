@@ -8,6 +8,7 @@
 
 import UIKit
 import Photos
+import AVKit
 
 class VideoPickerViewController: UIViewController {
     var presenter: ViewToPresenterProtocol?
@@ -90,7 +91,30 @@ extension VideoPickerViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // TODO: Preview video
+        
+//        DispatchQueue.global().async {
+//            let video = self.videos[indexPath.row]
+//            PHCachingImageManager().requestAVAsset(forVideo: video.asset!, options: nil) { (asset, audioMix, info) in
+//                let asset = asset as! AVURLAsset
+//
+//                DispatchQueue.main.async {
+//                    let player = AVPlayer(url: asset.url)
+//                    let playerVC = AVPlayerViewController()
+//                    playerVC.player = player
+//
+//                    self.present(playerVC, animated: true) {
+//                        player.play()
+//                    }
+//                }
+//            }
+//        }
+        
+        let video = self.videos[indexPath.row]
+
+        if let playerVC = storyboard?.instantiateViewController(withIdentifier: "VideoPreviewViewController") as? VideoPreviewViewController {
+            playerVC.video = video
+            self.present(playerVC, animated: true, completion: nil)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
